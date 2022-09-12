@@ -330,6 +330,22 @@ footer {
  }
 
 @media screen and (max-width:720px) {
+    
+    #info{
+        width: 100%;
+     }
+     #emergenza{
+        width: 100%;
+     }
+
+    #container-footer{
+
+        flex-direction:column;
+    }
+
+    #logo-footer{
+        max-width:50%;
+    }
 
     .flex-container{
         flex-direction: column;
@@ -387,34 +403,7 @@ footer {
     
 }
 
-@media screen and (max-width:480px) {
 
-    .flex-container{
-        margin-top: 30%;
-    }
-
-    .logo{
-        width: 190px;
-        margin-top: 15px;
-        
-    }
-    
-    .logo img{
-        width: 190px;
-    }
-
-
-    iframe{
-        width: 360px;
-        height: 280px;
-    }
-
-    .immagine img 
-    {
-        width: 400px;
-      
-    }
-}
 
 @media screen and (max-width:480px) {
 
@@ -436,5 +425,18 @@ footer {
     {
         width: 280px;
       
+    }
+
+    #regole{
+        font-size: large;
+    }
+  
+
+    #regole ol li img{
+       display: none;
+    }
+
+    .flex-container{
+        margin-top: 25%;
     }
 }
