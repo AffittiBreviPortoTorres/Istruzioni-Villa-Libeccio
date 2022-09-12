@@ -1,10 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
 @import url(https://necolas.github.io/normalize.css/);
+@import url(../media/libre-baskerville/LibreBaskerville-Bold.ttf);
+@import url(../media/libre-baskerville/LibreBaskerville-Italic.ttf);
+@import url(../media/libre-baskerville/LibreBaskerville-Regular.ttf);
+
+.mySlides {display:none;}
+
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+    font-family: 'Libre Baskerville',Georgia,"Times New Roman",serif;
+    color: #232323;
+    word-wrap: break-word;
     box-sizing: border-box;
+    
+    
 }
 
 *{
@@ -13,6 +22,76 @@ body{
 
 a{
     text-decoration: none;
+
+}
+
+.flex-container{
+    display: flex;
+    margin-top: 15%;
+}
+#mod{
+    max-width:40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#logo-footer{
+    max-width:20%;
+    justify-content: center
+}
+#regole{
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    width: 70%;
+    font-size: larger;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#regole p{
+    font-family: 'Libre Baskerville',Georgia,"Times New Roman",serif;
+   
+}
+#regole ol{
+    text-align: left;
+}
+#sezione2{
+  width: 100%;
+  
+}
+#slideshow{
+    width: 50%;
+    height: auto;
+    max-width:40%;
+}
+
+#slideshow img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+#box{
+    
+    display: flex;
+   width: 50%;
+   height: auto;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   
+   flex-direction: column;
+  
+}
+
+#box p{
+    font-size: xx-large;
+    font-family: 'Libre Baskerville',Georgia,"Times New Roman",serif;
+}
+#box span{
+    font-size: large;
+    font-family: 'Libre Baskerville';
+    width: 60%;
 }
 
 header{
@@ -22,6 +101,7 @@ header{
     width: 98%;
     position: fixed;
     top: 0px;
+    z-index: 10000000;
 }
 
 .logo{
@@ -36,6 +116,16 @@ header{
 
 }
 
+.immagine img 
+{
+    width: 650px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 nav{
     width: auto;
     margin: 0 auto;
@@ -48,16 +138,6 @@ nav{
 .lang-menu{
     margin-top: 25px;
     position: relative;
-}
-
-.immagine img 
-{
-    width: 650px;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 
 .selected-lang{
@@ -85,9 +165,9 @@ nav{
     border-radius: 12px;
     display: none;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 0;
-    border: 1px solid #e2007a;
+    
 }
 
 .lang-menu ul li{
@@ -114,7 +194,7 @@ nav{
 .lang-menu ul li a:hover{
     background-color: #f2f2f2;
     border-radius: 10px;
-    border: 1px solid #003293;
+    
 }
 
 .it:before{
@@ -138,126 +218,226 @@ nav{
 }
 
 .lang-menu:hover ul{
-display: block;
-}
-
-#andata{
-    width: 100%;
-    text-align: center;
-    margin-top: 120px;
-    font-size: xx-large;
-    color: #e2007a;
-}
-
-iframe{
-    margin: auto;
     display: block;
-    width: 560px;
-    height: 315px;
-}
-
-#video{
-    margin-top: 40px;
-}
-
-#d-uno{
-    width:65%;
-    margin: auto;
-    display: block;
-    text-align: center;
-}
-footer {
-    background-color: #e2007a;
-    padding: 10px;
-    text-align: center;
-    color: white;
+    }
     
-  }
-
-  footer a {
-
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-@media screen and (max-width:720px) {
-
-    nav{
-        margin-left: 10px;
-        margin-right: 10px;
+    #titolo{
+        width: 100%;
+        text-align: center;
+        margin-top: 120px;
+        font-size: xx-large;
+        color: #232323;
     }
     
     iframe{
-        width: 460px;
-    }
-
-    .logo{
-        width: 250px;
-        margin-top: 10px;
-        
+       margin: auto;
+       display: block;
+       width: 560px;
+       height: 315px;
     }
     
-    .logo img{
-        width: 250px;
+    #video{
+        margin-top: 40px;
+        box-shadow: -5px 10px 60px #b2afae;
+        width: fit-content;
+        height: fit-content;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #container{
+       
+       
+        width:100%;
+        height: auto;
+    
+    }
+    #d-uno{
+        width:65%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    
+    footer {
         
-    }
-
-    .lang-menu ul{
-        width: max-content;
-        left:-30px;
-    }
-
-    .immagine img 
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+    
+     #info ul li{
+        text-decoration: none;
+        text-align: left;
+        list-style-type: none;
+        font-size: medium;
+     }
+     #info p{
+        text-align:left;
+        font-size: x-large;
+        font-family: 'Libre Baskerville',Georgia,"Times New Roman",serif;
+        
+     }
+     #info{
+        width: 25%;
+        height: auto;
+     }
+     #emergenza{
+        width: 25%;
+        height: auto;
+       
+     }
+    
+     #emergenza ul li{
+        text-decoration: none;
+        text-align: left;
+        list-style-type: none;
+        font-size: medium;
+     }
+     #emergenza p{
+        text-align:left;
+        font-size: x-large;
+        font-family: 'Libre Baskerville',Georgia,"Times New Roman",serif;
+        
+     }
+     #container-footer{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: baseline;
+        
+     }
+    
+     @media screen and (max-width:850px) {
+    
+        #box p{
+            font-size: x-large;
+            
+        }
+        #box span{
+            font-size: medium;
+            width: 80%;
+        }
+    
+        .flex-container{
+            margin-top: 20%;
+            width: 90%;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+     }
+    
+    @media screen and (max-width:720px) {
+        
+        #info{
+            width: 100%;
+         }
+         #emergenza{
+            width: 100%;
+         }
+    
+        #container-footer{
+    
+            flex-direction:column;
+        }
+    
+        #logo-footer{
+            max-width:50%;
+        }
+    
+        .flex-container{
+            flex-direction: column;
+        }
+        #slideshow{
+            max-width: 100%;
+            
+        }
+        #slideshow img{
+            width: 100%;
+        }
+        #box{
+           width: 100%;
+           margin-left:10px;
+           margin-right:10px;
+           flex-direction: column;
+        }
+        
+        #box p{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+    
+        nav{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        iframe{
+            width: 460px;
+        }
+    
+        .logo{
+            width: 250px;
+            margin-top: 10px;
+            
+        }
+        
+        .logo img{
+            width: 250px;
+            
+        }
+    
+        .lang-menu ul{
+            width: max-content;
+            left:-30px;
+        }
+    
+        .immagine img 
     {
         width: 550px;
       
     }
-    
-}
-
-@media screen and (max-width:480px) {
-
-    .logo{
-        width: 190px;
-        margin-top: 15px;
         
     }
     
-    .logo img{
-        width: 190px;
-    }
-
-
-    iframe{
-        width: 360px;
-        height: 280px;
-    }
-
-    .immagine img 
-    {
-        width: 400px;
+    
+    
+    @media screen and (max-width:480px) {
+    
+        iframe{
+            width: 260px;
+            height: 280px;
+        }
+    
+        #andata{
+            font-size: x-large;
+        }
+    
+        #d-uno{
+            font-size: medium;
+        }
+        
+    
+        .immagine img 
+        {
+            width: 280px;
+          
+        }
+    
+        #regole{
+            font-size: large;
+        }
       
+    
+        #regole ol li img{
+           display: none;
+        }
+    
+        .flex-container{
+            margin-top: 25%;
+        }
     }
-}
-
-@media screen and (max-width:480px) {
-
-    iframe{
-        width: 260px;
-        height: 280px;
-    }
-
-    #andata{
-        font-size: x-large;
-    }
-
-    #d-uno{
-        font-size: medium;
-    }
-
-
-    .immagine img 
-    {
-        width: 280px;
-      
-    }
-}
+    
