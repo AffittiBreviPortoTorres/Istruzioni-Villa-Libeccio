@@ -407,6 +407,14 @@ footer {
 
 @media screen and (max-width:480px) {
 
+    .logo img{
+        width: 170px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    
+
     iframe{
         width: 260px;
         height: 280px;
